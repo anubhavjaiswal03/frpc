@@ -1,0 +1,85 @@
+serverAddr = "<VPS_PUBLIC_IP>"
+serverPort = <FRPS_BIND_PORT>
+
+auth.method = "token"
+auth.token = "<SHARED_AUTH_TOKEN>"
+
+# Terraria
+[[proxies]]
+name = "terraria"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = <LOCAL_TERRARIA_PORT>
+remotePort = <VPS_TERRARIA_PORT>
+
+# Astroneer gameplay port
+[[proxies]]
+name = "astroneer_game"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = <LOCAL_ASTRONEER_GAME_PORT>
+remotePort = <VPS_ASTRONEER_GAME_PORT>
+
+# Astroneer steam query port
+[[proxies]]
+name = "astroneer_query"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = <LOCAL_ASTRONEER_QUERY_PORT>
+remotePort = <VPS_ASTRONEER_QUERY_PORT>
+
+# Valheim - game port
+[[proxies]]
+name = "valheim_2456"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = <LOCAL_VALHEIM_GAME_PORT>
+remotePort = <VPS_VALHEIM_GAME_PORT>
+
+# Valheim - steam query port
+[[proxies]]
+name = "valheim_2457"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = <LOCAL_VALHEIM_QUERY_PORT>
+remotePort = <VPS_VALHEIM_QUERY_PORT>
+
+# Valheim - steam networking port
+[[proxies]]
+name = "valheim_2458"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = <LOCAL_VALHEIM_NETWORKING_PORT>
+remotePort = <VPS_VALHEIM_NETWORKING_PORT>
+
+# Minecraft
+[[proxies]]
+name = "minecraft"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = <LOCAL_MINECRAFT_PORT>
+remotePort = <VPS_MINECRAFT_PORT>
+
+# V Rising - game port
+[[proxies]]
+name = "vrising_game"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = <LOCAL_VRISING_GAME_PORT>
+remotePort = <VPS_VRISING_GAME_PORT>
+
+# V Rising - query port
+[[proxies]]
+name = "vrising_query"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = <LOCAL_VRISING_QUERY_PORT>
+remotePort = <VPS_VRISING_QUERY_PORT>
+
+# Return to Moria
+[[proxies]]
+name = "moria_udp"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = <LOCAL_MORIA_PORT>
+remotePort = <VPS_MORIA_PORT>

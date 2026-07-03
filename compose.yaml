@@ -1,0 +1,14 @@
+x-arcane:
+  icon: https://my-cdn.badalpe.com/icons/frp.icon.png
+  urls:
+    - https://github.com/fatedier/frp
+
+services:
+  frpc:
+    container_name: frpc
+    image: fatedier/frpc:v0.69.1
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./frpc.toml:/etc/frp/frpc.toml:ro
+    command: ["-c", "/etc/frp/frpc.toml"]

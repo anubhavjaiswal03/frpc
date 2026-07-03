@@ -1,0 +1,6 @@
+# Secrets - never commit
+frpc.toml
+
+# OS/editor cruft
+.DS_Store
+*.swp
