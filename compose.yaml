@@ -6,7 +6,7 @@ x-arcane:
 services:
   frpc:
     container_name: frpc
-    image: fatedier/frpc:v0.70.1
+    image: fatedier/frpc:v0.71.0@sha256:99ece6a2b62cfc68731e0df289af804ff1c699911cfc47871856434f1d6d53ee
     restart: always
     network_mode: host
     volumes:
